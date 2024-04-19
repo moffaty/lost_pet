@@ -44,7 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'contentOptions' => function ($model) {
                     $options = [];
-                    echo $model->status_id;
                     switch ($model->status_id) {
                         case 1: $options['style'] = 'background-color: #f8eaff;'; break;
                         case 2: $options['style'] = 'background-color: aliceblue;'; break;

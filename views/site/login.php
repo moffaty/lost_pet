@@ -43,6 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
 
+            <a href="/user/create" style="color:#0000005e">Зарегистрироваться</a>
+
             <?php ActiveForm::end(); ?>
 
         </div>

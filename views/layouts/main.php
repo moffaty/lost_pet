@@ -70,18 +70,16 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </main>
 
 <footer id="footer" class="py-2 mt-auto nav container d-flex flex-wrap align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-body-secondary">© <?= date('Y'); ?><?= Yii::$app->name ?></p>
+    <p class="col-md-4 mb-0 text-body-secondary">© <?= date('Y'); ?> <?= Yii::$app->name ?></p>
 
     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="/site/index" class="nav-link px-2 text-body-secondary">Главная</a></li>
+      <li class="nav-item"><a href="/site/about" class="nav-link px-2 text-body-secondary">О нас</a></li>
+      <li class="nav-item"><a href=<?= Yii::$app->user->isGuest ? '/site/login' : '/pet-requests/index' ?> class="nav-link px-2 text-body-secondary">Заявки</a></li>
     </ul>
 </footer>
 
